@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace listträning
 {
@@ -17,7 +18,7 @@ namespace listträning
             arrayOfNumbers[3] = 93;
             arrayOfNumbers[4] = 1;
 
-            Console.WriteLine("Check if you pick a lucky number");
+           /* Console.WriteLine("Check if you pick a lucky number");
             string nr = Console.ReadLine(); 
             int myNr = Convert.ToInt32(nr);
 
@@ -32,6 +33,15 @@ namespace listträning
                 {
                     Console.WriteLine("no win for you");
                 }
+           */
+
+                int[] firstOne = new int[10] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+                int[] secondOne = new int[10] { 10, 9, 8, 7, 6, 5, 4, 3, 2, 1 };
+                Console.WriteLine(string.Join(',', firstOne.Reverse()));
+                
+
+                
+
             }
 
         }
